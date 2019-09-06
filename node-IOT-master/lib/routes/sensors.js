@@ -15,5 +15,12 @@ module.exports = Router()
     } catch (err) {
         next(err);
     }
-    
 })
+
+.get('/', async(req,res, next) => {
+    res.send([
+        {
+          address: '127.1.2.3'  
+         }
+    ])
+});
